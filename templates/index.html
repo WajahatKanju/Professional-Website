@@ -1,11 +1,18 @@
 {% extends "_base.html" %}
+{% load static %}
 
-{% block title %}My Page Title{% endblock %}
-{% block stylesheet %}style.css{% endblock %}
-{% block script %}index.js{% endblock %}
+
+{% block title %}Page Title{% endblock %}
 
 {% block content %}
+{% include "includes/_navbar.html" %}
 <div class="container">
-    <h1>Welcome to my website</h1>
+  <h1 class="display-4 mt-5">Welcome to my Django Project</h1>
+  <img src="{% static 'assets/llc_icon.png' %}" alt="Icon" class="img-fluid mt-4">
+
+  <div class="mt-5">
+    <p>This is a simple example of integrating Bootstrap with your Django project.</p>
+    <p>You can customize this page further by adding more content and using Bootstrap components.</p>
+  </div>
 </div>
 {% endblock %}

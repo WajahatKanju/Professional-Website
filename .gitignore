@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+*.pyc
+*.pyo/
+__pypackages__/
+pep517/
+__pycache__/
+pycache/
+Pipfile
+Pipfile.lock
+
+# Environment variables
+.env
+
+# Django generated files
+*.log
+*.pot
+*.pyo
+*.swp
+db.sqlite3
+/staticfiles/
+/media/
+
+# Editor / IDE specific files
+.vscode/
+.idea/
+
+# Compiled translations
+locale/
+
+# Dependencies
+node_modules/
